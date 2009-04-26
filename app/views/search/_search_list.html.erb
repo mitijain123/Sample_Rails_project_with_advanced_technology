@@ -1,0 +1,31 @@
+<table width="100%" border=1>
+<tr>
+  <td >
+    <b><%= @courses[0].class %></b>
+  </td>
+  <td>
+    <b><%= @courses[0].activities[0].class %></b>
+  </td>
+  <td>
+    <b><%= @courses[0].activities[0].resources[0].class %></b>
+  </td>
+</tr>
+<% for courses in @courses %>
+   <% for activities in courses.activities %>
+      <% for resources in activities.resources %>
+      <tr>
+        <td>
+          <%= courses.name %>
+        </td>
+        <td>
+          <%= activities.name %>
+        </td>
+        <td>
+          <%= resources.name %>
+        </td>
+        
+      </tr>
+      <% end %>
+    <% end %>
+<% end %>
+</table>

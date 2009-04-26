@@ -1,0 +1,8 @@
+<% form_remote_tag(:update => "list",:url=>("search/search_list") )  do %>
+<%= text_field :course,:name,:auto_complete=>"off"%>
+
+<%= content_tag('div', '', :class => 'autocomplete', :id =>'course_name_auto_complete') %>
+<%= auto_complete_field('course_name', :url =>'/search/auto_complete_for_course_name',:min_chars=>4) %> 
+    <div><%= submit_tag 'Search' %></div>
+  <% end -%>
+<div id='list'></div>
