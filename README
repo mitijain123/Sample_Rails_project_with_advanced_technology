@@ -1,0 +1,26 @@
+Description of the Application :-
+  
+    This Application contains a search box with auto completed feature and list of user create,edit,show and delete functionality.
+   - In this user can enter the text more than 4 character and list of matching characters  will be displayed to select and then click on the search button to search the data details is given below.
+
+Database Details
+
+Database: search_app
+Tables: course,activities,resources
+Relation ships: courses and activities 1 to many relation
+                      activities and resources 1 to many relation
+                      user table
+
+How to run the Application:
+1. Navigate to search_app.
+2.rake db:migrate.
+3. ruby script/server
+4. http://localhost:3000/search
+5. type "spor" and you will get list of all matching values from database on table courses.
+6. select one of the value.
+7. click on the search button.
+8. http://localhost:3000/user for the list of users with Create,edit,delete and show
+
+I had attached the application in .rar format. please unzip it and test it, if you have any difficulties in unzipping the file please let me know.
+
+If you want any more details, please fell free to contact : 9328158848.
